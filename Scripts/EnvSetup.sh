@@ -46,9 +46,9 @@ cat /home/robotframework/nocnoc-report/output.log | grep '| FAIL |'
 
 if [ $? == 0 ]
 then
-data=":x: Follow link for more details below \n*Report*: http://$ip:8080/$testtarget/report.html\n*Logs*: http://$ip/$testtarget/log.html\n"'```'${result}'```'
+data=":x: Follow link for more details below \n*Report*: http://$ip:8080/$testtarget/report.html\n*Logs*: http://$ip:8080/$testtarget/log.html\n"'```'${result}'```'
 else
-data=":heavy_check_mark: Follow link for more details below \n*Report*: http://$ip:8080/$testtarget/report.html\n*Logs*: http://$ip/$testtarget/log.html\n"'```'${result}'```'
+data=":heavy_check_mark: Follow link for more details below \n*Report*: http://$ip:8080/$testtarget/report.html\n*Logs*: http://$ip:8080/$testtarget/log.html\n"'```'${result}'```'
 fi
 
  curl -X POST \
