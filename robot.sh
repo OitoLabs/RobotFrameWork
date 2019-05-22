@@ -1,8 +1,8 @@
 #!/bin/bash
 
 CMD="$2_$1"
-testsuite="$3"
-testdir="$4"
+# testsuite="$3"
+testdir="$3"
 containername="$5"
 servicename="$6"
 echo "**Docker Compose $1 for $2**"
