@@ -1,0 +1,22 @@
+version: '2'
+services:
+  nocnoc-testsuite-0:
+    build: .
+    volumes:
+      - "/tmp/nocnoc-testcases:/home/robotframework/nocnoc-report"
+    environment:
+      - BROWSER=firefox
+      - robotenv
+      - testtarget
+      - DISPLAY=:99
+    container_name: nocnoc-testsuite
+  nginx: 
+    image: nginx:alpine
+    container_name: nocnoc_nginx
+    volumes:
+      - ./nginx/default:/etc/nginx/conf.d/default
+      - "/tmp/nocnoc-testcases:/usr/share/nginx/html"
+    ports:
+      - 80:80
+      - 443:443    
+   
