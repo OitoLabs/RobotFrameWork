@@ -35,7 +35,7 @@ echo "Result-End"
 
 result=$(cat /home/robotframework/nocnoc-report/output.log | tr -d \'\")
 
-echo "amar$result"
+
 
 
 
@@ -57,8 +57,6 @@ fi
   -H 'Postman-Token: 89fd6ee5-58b9-4c41-95b3-e2a2d0b5d2d7' \
   -H 'cache-control: no-cache' \
   -d "{'text': '$data','channel': 'GH0S9UJS3'}"
-
-  sleep 3000
 
 
 
