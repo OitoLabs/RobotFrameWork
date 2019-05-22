@@ -15,17 +15,17 @@ Steps to follow
 ```
 Usages:
 ```
-git clone https://github.hpe.com/amar-khan/robotframework.git
-cd robotframework
+git https://github.com/OitoLabs/RobotFrameWork/
+cd RobotFrameWork
 ```
 #### Steps to follow-
 ```
 1. stop the docker container
-  "./robot.sh stop-test <pro/itg>"
+  "./robot.sh stop-test <pro/qa>"
 2. build the docker file  
-  "./robot.sh rebuild-test <pro/itg>"
+  "./robot.sh rebuild-test <pro/qa>"
 3. start docker container 
-  "./robot.sh start-test <pro/itg> <.robot file name or else give . for all>"
+  "./robot.sh start-test <pro/qa> <.robot file name or else give . for all>"
   ```
 #### Testcase Refrences-
-https://github.hpe.com/amar-khan/ctf-selenium
+git clone https://github.com/OitoLabs/nocnoc-testcases.git
