@@ -3,7 +3,7 @@ mode=$1
 case "$mode" in
 'start')
 echo "***Starting up the Virtual Frame Buffer on Screen 1***"
-/usr/bin/Xvfb :99 -screen 0 1152x900x8 &
+/usr/bin/Xvfb :99 -ac -screen 0 1152x900x8 &
 ;;
 'stop')
 echo "***Stoping Active Virtual Frame***"
