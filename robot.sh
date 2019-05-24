@@ -26,7 +26,7 @@ case "${CMD}" in
         ;;
     qa_start-test)
         docker rm -f nocnoc-testsuite
-        robotenv=qa  testtarget="${testdir}" docker-compose -f docker-compose.yml up
+        robotenv=qa  testtarget="${testdir}" docker-compose -f docker-compose.yml up -d
         ;;
     qa_stop-test)
         docker-compose -f docker-compose.yml stop
